@@ -1,0 +1,329 @@
+
+@import url("https://fonts.googleapis.com/css?family=Hepta Slab");
+@import url("https://fonts.googleapis.com/css?family=manjari");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.bgimage{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	margin-bottom: 20px;
+	animation: animate 9s ease-in-out infinite;
+
+}
+
+@keyframes animate{
+	0%,100%{
+		background-image: url(homepage1.jpg);
+
+	}
+	33%{
+		background-image: url(homepage2.jpg);
+
+	}
+	66%{
+		background-image: url(homepage3.jpg);
+
+	}
+}
+
+
+.menu{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed !important;
+
+
+	
+}
+
+.leftmenu{
+	width: 25%;
+	line-height: 100px;
+	float: left;
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
+	font-family: Roboto;
+	float: left;
+
+
+
+}
+
+.rightmenu{
+	width: 50%;
+	height: 100px;
+	float: right;
+}
+
+.rightmenu ul li{
+	font-family: roboto;
+	display: inline-block;
+	list-style: none;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+}
+
+.rightmenu ul li a{
+	text-decoration: none;
+	transition: 0.6s ease;
+	color: white;
+
+}
+
+.rightmenu ul li a:hover{
+	border: 1px solid rgb(255, 1, 22);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	color:red;
+	padding: 7px;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 16px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding:  12px 16px;
+	text-decoration: none;
+	display: block;
+	block-size: 70px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
+  
+.dropdown-content a:hover 
+{
+	background-color: #ddd;
+	background-color: rgba(255, 254, 254,0.5);
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+
+
+.text{
+	width: 100%;
+	margin-top: 300px;
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 50px;
+	color: #ffffff;
+	font-family:Merriweather;
+	transition: 0.5s ease; 
+
+}
+
+.search_box
+{
+	width: 50%;
+	position: relative;
+}
+
+.search_box input[type="text"]
+
+{
+	width: 100%;
+	padding: 20px;
+	padding-right: 60px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.6);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    margin-left: 400px;
+    
+
+}
+
+::-webkit-input-placeholder
+{
+	color:#fff;
+}
+
+::-moz-placeholder
+{
+	color: #fff;
+	}
+
+::-ms-input-placholder
+{
+	color: #fff;
+
+}
+
+.fa-search{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 980px;
+	color: #fff;
+	font-size: 25px;
+	margin-left: 125px;
+
+}
+
+
+.autocomplete-items {
+  position: relative;
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  margin-left: 400px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  font-family: roboto;
+  
+  
+  
+  
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background:rgba(0,0,0,0.6);
+  border-bottom: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+
+  color:red;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: white;
+  color: red;
+}
+
+.main{
+ 	margin: 2%;
+ 	margin-top: 750px;
+}
+.destination{
+	font-family:Acme;
+	color: #f04916
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1{
+	width: 27%;
+	display: inline-block;
+	border: 1px solid black;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+	border-radius: 5px; 
+	margin: 2%;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	
+	
+}
+
+.card1:hover{
+   box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.image img{
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	
+	
+}
+
+a{
+  text-decoration: none;
+}
+
+.image .title{
+
+	position: absolute;
+	bottom: 8px;
+	left: 30px;
+	font-family: roboto;
+	text-transform: uppercase;
+	
+}
+
+.main .card1 .title h1 a{
+	color: rgb(0, 0, 0);
+}
+
+.rightmenu1{
+	width: 40%;
+	height: 100px;
+	float: right;
+}
+
+.rightmenu1 ul li{
+	font-family: roboto;
+	display: inline-block;
+	list-style: none;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+}
+
+.rightmenu1 ul li a{
+	text-decoration: none;
+	transition: 0.6s ease;
+	color: white;
+
+}
+
+.rightmenu1 ul li a:hover{
+	border: 1px solid rgb(255, 1, 22);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	color:red;
+	padding: 7px;
+}
+
+footer p{
+	padding: 10px;
+}
